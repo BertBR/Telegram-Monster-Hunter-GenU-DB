@@ -7,7 +7,7 @@ function helpMessage(ctx) {
 
     const msg = `Hi, *${ctx.message.from.first_name}*!\n
 There’s only *two* basic options available here. Check this out: \n\n` +
-        '`/monster Rathalos` - _to see Rathalos weakness_\n\n`/drop Rathalos LR` - _to see Rathalos LR droplist_'
+        '`/monster Rathalos` - _to see Rathalos weaknesses_\n\n`/drop Rathalos LR` - _to see Rathalos LR droplist_'
 
     ctx.replyWithDocument('https://media.giphy.com/media/JSwGg4kvtbFGkW3gZr/giphy.gif',
         {

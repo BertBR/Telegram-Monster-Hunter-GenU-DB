@@ -8,6 +8,6 @@ This bot uses the [MHGENU-DB](https://github.com/gatheringhallstudios/MHGenDatab
 
 This bot has two basic commands:
 
-`/monster monstername` - to show Monster Weakness
+`/monster monstername` - to show Monster Weaknesses
 
 `/drop monstername <L|HR|G>` - to show Monster droplist based on specified Rank
