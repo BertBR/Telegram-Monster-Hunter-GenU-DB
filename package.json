@@ -1,0 +1,23 @@
+{
+  "name": "Telegram-Monster-Hunter-GenUdb",
+  "version": "1.0.0",
+  "main": "src/bot.js",
+  "dependencies": {
+    "better-sqlite3": "^5.4.3",
+    "dotenv": "^8.1.0",
+    "ngrok": "^3.2.5",
+    "telegra.ph": "^1.0.1",
+    "telegraf": "^3.32.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  },
+  "scripts": {
+    "start": "node src/bot.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
