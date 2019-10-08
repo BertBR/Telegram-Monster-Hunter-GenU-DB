@@ -25,8 +25,18 @@ function monsterNameCase(str) {
 
     for (let i = 0; i < splitStr.length; i++) {
 
-        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
+        if(splitStr.toString().indexOf('-') != -1){
 
+            if(splitStr[i] === 'lao-shan'){ 
+                return 'Lao-Shan Lung'
+            }
+            if(splitStr[i] === 'ahtal-ka'){
+                return 'Ahtal-Ka'
+            }
+
+        }
+
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
     }
 
     return splitStr.join(' ')
@@ -34,7 +44,6 @@ function monsterNameCase(str) {
 }
 
 async function showMonstersWeaknesses(bot, ctx) {
-
 
     //format output data
 
@@ -131,6 +140,7 @@ async function showMonstersWeaknesses(bot, ctx) {
     let [monsterName] = ctx.message.text.match(regex)
 
     monsterName = monsterName.trim()
+    const teste = monsterNameCase(monsterName)
 
     if (!regex.test(ctx.message.text)) {
 
