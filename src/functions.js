@@ -2,6 +2,11 @@ const db = require('better-sqlite3')('./database/mhgu.db')
 
 const Telegraph = require('telegra.ph')
 
+
+function startMessage(firstname) {
+    return `Hello *${firstname}*. Please, type ` + '`/help`' + ' to see how can I help you!'
+}
+
 //set case insensitive for search
 function helpMessage(ctx) {
 
@@ -293,5 +298,5 @@ async function showMonstersDroplist(bot, ctx) {
 }
 
 module.exports = {
-    showMonstersWeaknesses, showMonstersDroplist, helpMessage
+    showMonstersWeaknesses, showMonstersDroplist, helpMessage, startMessage
 }

@@ -1,6 +1,6 @@
 const { bot } = require('./web')
 
-const { showMonstersWeaknesses, showMonstersDroplist, helpMessage } = require('./functions')
+const { showMonstersWeaknesses, showMonstersDroplist, helpMessage, startMessage } = require('./functions')
 
 async function main() {
 
@@ -8,7 +8,7 @@ async function main() {
 
         //Welcome Message
 
-        bot.start((ctx) => ctx.replyWithMarkdown(`Hello *${ctx.message.from.first_name}*. Please, type ` + '`/help`' + ' to see how can I help you!'))
+        bot.start((ctx) => ctx.replyWithMarkdown(startMessage(ctx.message.from.first_name)));
 
         //Show Monsters Weaknesses
 
