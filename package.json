@@ -2,6 +2,10 @@
   "name": "Telegram-Monster-Hunter-GenUdb",
   "version": "1.0.1",
   "main": "src/bot.js",
+  "contributors": [
+    "Bert",
+    "Vinicius"
+  ],
   "dependencies": {
     "better-sqlite3": "^5.4.3",
     "dotenv": "^8.1.0",
